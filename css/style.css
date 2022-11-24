@@ -37,7 +37,7 @@ nav#navbar .menu a:hover {
 
 #welcome-section {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background: #2f3133;
     display: flex;
     justify-content: center;
@@ -122,6 +122,27 @@ section#projects>h2 {
     border-bottom: 1px solid #fff;
     max-width: fit-content;
 }
+
+.project-tile a:hover + p {
+    transition: 0.5s ease-in;
+    transform: translateX(2px);
+}
+.project-tile a:hover + p::after {
+   color: rgb(142, 44, 44);
+   content: " /> ";
+   transition: 0.5s ease-in;
+   transform: translateX(2px);
+}
+
+.project-tile a:hover + p::before {
+    color: rgb(142, 44, 44);
+    content: "< ";
+    transition: 0.5s ease-in;
+    transform: translateX(2px);
+}
+
+
+
 
 
 

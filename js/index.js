@@ -26,3 +26,12 @@ INSTRUCTIONS:
 
 // Once you have read the above messages, you can delete all comments. 
 "use strict";
+
+const projectTile = document.querySelectorAll('.project-tile');
+
+projectTile.forEach((tile) => {
+  tile.addEventListener('mouseenter', (e) => {
+     const paragraph = e.target.querySelector('p');
+     paragraph.classList.add('tag');
+  });
+});
